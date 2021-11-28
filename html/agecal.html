@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% block content %}
+
+   <div class="container-fluid" style="margin-top: 10%;">
+       <form action="age" method="post" style="align-items: center;" >
+           {% csrf_token %} 
+           <h4 style="margin-left:30%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Date Of Birth &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="date"class="form-control" placeholder="dd-mm-yyyy" name="dob" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" min="1990-01-01" max="2030-12-31" >
+
+           <br>
+           <br>
+           <h4 style="margin-left:30%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Age at the Date of ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="date"class="form-control" placeholder="dd-mm-yyyy" name="aad" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" min="1990-01-01" max="2030-12-31" >
+           <br>
+           <br>
+
+           <button type="submit" style="margin-left: 48%; background-color:#FFE652;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" class="btn">Calculate Age </button>
+       </form>
+
+   </div>
+
+
+{% endblock %}

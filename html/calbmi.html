@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% block content %}
+
+   <div class="container-fluid" style="margin-top: 10%;">
+       <form action="bmi" method="post" style="align-items: center;" >
+           {% csrf_token %} 
+           <h4 style="margin-left:30%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Enter your Height &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="number"class="form-control" placeholder="in cm" name="heg" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" min="1990-01-01" max="2030-12-31" >
+
+           <br>
+           <br>
+           <h4 style="margin-left:30%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Enter your Weight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="number"class="form-control" placeholder="in kg" name="weg" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" min="1990-01-01" max="2030-12-31" >
+           <br>
+           <br>
+
+           <button type="submit" style="margin-left: 48%; background-color:#FFE652;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" class="btn">Calculate BMI</button>
+       </form>
+
+   </div>
+
+
+{% endblock %}

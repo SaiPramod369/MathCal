@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Calculator</title>
+</head>
+
+<body style="background-color:#C2FFF9;">
+  <nav class="navbar" style="background-color:#009DAE;height: 10px;margin: 0px;">
+    <div class="container-fluid" style="height: 10px;">
+      <a href="http://127.0.0.1:8000/"><span class="navbar-brand mb-0 h1"
+          style="margin-top: 0;color:#FFE652;font-family: 'Bubblegum Sans', cursive; ;"><i
+            class="fas fa-calculator"></i>&nbsp;&nbsp;&nbsp;<h3 style="display: inline;">MathCal</h3></span></a>
+      <a href="http://127.0.0.1:8000/"><span class="navbar-brand mb-0 h1"
+          style="margin-top: 0;color:#FFE652;font-family: 'Bubblegum Sans', cursive; margin-left: 40%;">
+          <h4 style="display: inline; "><i class="fas fa-home"></i> &nbsp; Home</h4>
+        </span></a>
+      <a href="mailto:saipramod54321@gmail.com"><span class="navbar-brand mb-0 h1"
+          style="margin-top: 0;color:#FFE652;font-family: 'Bubblegum Sans', cursive; margin-left: 3%;">
+          <h4 style="display: inline; "> <i class="fas fa-envelope"></i> &nbsp;Contact</h4>
+        </span></a>
+    </div>
+  </nav>
+
+  <div>
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div class="container-fluid" style=" position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    text-align: left;">
+
+
+    <div>
+
+      <span class="text-muted" style="color:#009DAE;font-family: 'Bubblegum Sans', cursive;display:inline">&copy;
+        2021 Pandillapalli Sai Pramod</span>
+
+      <span style="background-color: #009DAE;margin-left: 75%;border-radius: 5px;padding: 8px;">
+        <a href="https://www.linkedin.com/in/pandillapalli-sai-pramod-0265681ab" target="_blank"
+          style="text-decoration:none"> <i class="fab fa-linkedin" style="display: inline;color:#FFE652"></i></a>
+        <a href="https://twitter.com/sai_pramod_p?s=09" target="_blank" style="text-decoration:none"> <i
+            class="fab fa-twitter" style="display: inline; color:#FFE652"></i></a>
+        <a href="https://github.com/SaiPramod369" target="_blank" style="text-decoration:none"><i class="fab fa-github"
+            style="display: inline; color:#FFE652"></i></a>
+            <a href="mailto:saipramod54321@gmail.com" target="_blank" style="text-decoration:none"><i class="fas fa-envelope"
+              style="display: inline; color:#FFE652"></i></a>
+        
+      </span>
+
+
+      <br>
+      <br>
+
+    </div>
+
+    </footer>
+  </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+
+   <div class="container-fluid" style="margin-top: 10%;">
+       <form action="dl" method="post" style="align-items: center;" >
+           {% csrf_token %} 
+           <h4 style="margin-left:30%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Enter Binary Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="number"class="form-control" placeholder="binary number" name="num" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" >
+           <br>
+           <br>
+           <button type="submit" style="margin-left: 48%; background-color:#FFE652;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" class="btn">Calculate</button>
+       </form>
+
+   </div>
+
+
+{% endblock %}
