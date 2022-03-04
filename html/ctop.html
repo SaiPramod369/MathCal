@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% block content %}
+
+   <div class="container-fluid" style="margin-top: 10%;">
+       <form action="cp" method="post" style="align-items: center;" >
+           {% csrf_token %} 
+           <h3 style="margin-left:48%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >a + bj</h3>
+           <br><br>
+
+           <h4 style="margin-left:35%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Value of a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="number"class="form-control" placeholder="number" name="a" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;" >
+
+           <br>
+           <br>
+           <h4 style="margin-left:35%;display: inline;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" >Value of b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+           <input type="number"class="form-control" placeholder="number" name="b" style="width:auto;margin-left:5%;display: inline;font-family: 'Bubblegum Sans', cursive;">
+           <br>
+           <br>
+
+           <button type="submit" style="margin-left: 48%; background-color:#FFE652;color:#009DAE;font-family: 'Bubblegum Sans', cursive;" class="btn">Calculate</button>
+       </form>
+
+   </div>
+
+
+{% endblock %}

@@ -1,8 +1,10 @@
+from django.http import request
 from django.http.response import HttpResponse
 from django.shortcuts import render
 import statistics
 from datetime import date
 import math
+import cmath
 
 # Create your views here.
 def home(request):
@@ -96,3 +98,27 @@ def log(request):
     c=math.log(a,base)
     c=float("{:.4}".format(c))
     return render(request,'log.html',{"x":a,"base":base,"ans":c})
+def ctop(request):
+    return render(request,'ctop.html')
+def cp(request):
+    a=int(request.POST["a"])
+    b=int(request.POST["b"])
+    z=complex(a,b)
+    p,q=cmath.polar(z)
+    
+    p= float("{:.4}".format(p))
+    q= float("{:.4}".format(q))
+    return render(request,'cp.html',{"a":a,"b":b,"ans1":p,"ans2":q})
+def ptoc(request):
+    return render(request,'ptoc.html')
+def pc(request):
+    a=int(request.POST["a"])
+    b=int(request.POST["b"])
+    p=str(cmath.rect(a,b))
+    p=p.split('+')
+    q=(p[1])
+    q=q[:6]
+    p=(p[0])
+    p=p[1:7]
+   
+    return render(request,'pc.html',{"a":a,"b":b,"ans1":p,"ans2":q})

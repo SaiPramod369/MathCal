@@ -13,9 +13,13 @@ urlpatterns = [
     path('MaSD.html/cal',views.cal,name="cal"),
     path('agecal.html/',views.agecal,name="agecal"),
     path('agecal.html/age',views.age,name="age"),
-   path('calbmi.html/',views.calbmi,name="calbmi"),
-   path('calbmi.html/bmi',views.bmi,name="bmi"),
-   path('logcal.html/',views.logcal,name="logcal"),
-   path('logcal.html/log',views.log,name="log")
+    path('calbmi.html/',views.calbmi,name="calbmi"),
+    path('calbmi.html/bmi',views.bmi,name="bmi"),
+    path('logcal.html/',views.logcal,name="logcal"),
+    path('logcal.html/log',views.log,name="log"),
+    path('ctop.html/',views.ctop,name="ctop"),
+    path('ctop.html/cp',views.cp,name="cp"),
+    path('ptoc.html/',views.ptoc,name="ptoc"),
+    path('ptoc.html/pc',views.pc,name="pc"),
 
 ]
